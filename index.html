@@ -33,7 +33,7 @@
             <div class="navbar-center hidden lg:flex">
                 <ul class="menu menu-horizontal px-1 gap-4 font-semibold ">
                     <li><a class="text-blue-700">Home</a></li>
-                    <li><a>Products</a></li>
+                    <li><button onclick="" class="products-btn btn ">Products</button></li>
                     <li><a>About</a></li>
                     <li><a>Contacts</a></li>
 
@@ -55,7 +55,7 @@
                     <ul tabindex="-1"
                         class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
                         <li><a>Home</a></li>
-                        <li><a>Products</a></li>
+                        <li><button class="product-btn">Products</button></li>
                         <li><a>About</a></li>
                         <li><a>Contacts</a></li>
                     </ul>
@@ -119,9 +119,10 @@
                     <img src="./Assets/beg2.jpeg" alt="Shoes" />
                 </figure>
                 <div class="grid grid-cols-2 justify-between gap-5">
-                     <span class="badge badge-xs p-2 bg-gray-400">Men,s clothing</span>
-                <p class=""><i class="fa-regular fa-star text-amber-300"></i> <span class="badge badge-xs text-xl">$3.9 (120)</span></p>
-                       
+                    <span class="badge badge-xs p-2 bg-gray-400">Men,s clothing</span>
+                    <p class=""><i class="fa-regular fa-star text-amber-300"></i> <span
+                            class="badge badge-xs text-xl">$3.9 (120)</span></p>
+
                 </div>
                 <div class="card-body">
                     <p class="font-bold">Fjallraven - Foldsack No. 1 Backpack</p>
@@ -139,9 +140,10 @@
                     <img src="./Assets/t-shirts.jpeg" alt="Shoes" />
                 </figure>
                 <div class="grid grid-cols-2 justify-between gap-5">
-                     <span class="badge badge-xs p-2 bg-gray-400">Men,s clothing</span>
-                <p class=""><i class="fa-regular fa-star text-amber-300"></i> <span class="badge badge-xs text-xl">$3.9 (120)</span></p>
-                       
+                    <span class="badge badge-xs p-2 bg-gray-400">Men,s clothing</span>
+                    <p class=""><i class="fa-regular fa-star text-amber-300"></i> <span
+                            class="badge badge-xs text-xl">$3.9 (120)</span></p>
+
                 </div>
                 <div class="card-body">
                     <p class="font-bold">Fjallraven - Foldsack No. 1 Backpack</p>
@@ -159,9 +161,10 @@
                     <img src="./Assets/jacket.jpeg" alt="Shoes" />
                 </figure>
                 <div class="grid grid-cols-2 justify-between gap-5">
-                     <span class="badge badge-xs p-2 bg-gray-400">Men,s clothing</span>
-                <p class=""><i class="fa-regular fa-star text-amber-300"></i> <span class="badge badge-xs text-xl">$3.9 (120)</span></p>
-                       
+                    <span class="badge badge-xs p-2 bg-gray-400">Men,s clothing</span>
+                    <p class=""><i class="fa-regular fa-star text-amber-300"></i> <span
+                            class="badge badge-xs text-xl">$3.9 (120)</span></p>
+
                 </div>
                 <div class="card-body">
                     <p class="font-bold">Fjallraven - Foldsack No. 1 Backpack</p>
@@ -174,18 +177,22 @@
                     </div>
                 </div>
             </div>
-            
+
         </div>
     </section>
-
-
-
-
-
-
+    <!-- all products -->
+    <section id="production-section ">
+        <h1 class="text-center text-4xl font-bold pt-10 ">Our Products</h1>
+        <div class="max-w-11/12 mx-auto my-20 flex justify-center gap-5">
+            <button class="btn btn-soft btn-primary rounded-xl text-black">All</button>
+            <button class="btn btn-soft btn-primary rounded-xl text-black">Electronics</button>
+            <button class="btn btn-soft btn-primary rounded-xl text-black">Jewelery</button>
+            <button class="btn btn-soft btn-primary rounded-xl text-black">Men's clothing</button>
+            <button class="btn btn-soft btn-primary rounded-xl text-black">Women's clothing</button>
+        </div>
+    </section>
+    <!--  -->
     <!-- footer section  -->
-
-
     <footer class="footer grid sm:grid-cols-1   md:grid-cols-2 justify-items-center  bg-base-200  p-20 bg-gray-900">
         <nav>
             <h6 class="footer-title text-3xl text-blue-700 font-bold">SwiftCart</h6>
@@ -195,13 +202,12 @@
 
         </nav>
 
-        <div class="flex-1 justify-around ">
+        <div class="flex-1 justify-around space-y-4 ">
             <h1 class="text-white">SUBSCRIBE TO OUR NEWSLETTER</h1>
             <p class="text-white">The Lastest news,articles and resources <br>sent to your inbox weekly</p>
             <form>
-                <h6 class="footer-title">Newsletter</h6>
+
                 <fieldset class="w-80">
-                    <label>Enter your email address</label>
                     <div class="join">
                         <input type="text" placeholder="Enter Your Email" class="input input-bordered join-item" />
                     </div>
