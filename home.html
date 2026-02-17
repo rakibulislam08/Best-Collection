@@ -32,8 +32,8 @@
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1 gap-4 font-semibold ">
-                        <li><a class="text-blue-700">Home</a></li>
-                        <li><button onclick="" class="products-btn btn ">Products</button></li>
+                        <li class=" hover:text-blue-700"><a href="index.html">Home</a></li>
+                        <li class=" hover:text-blue-700"><a>Products</a></li>
                         <li><a>About</a></li>
                         <li><a>Contacts</a></li>
 
@@ -70,7 +70,9 @@
         <section>
             <h1 class="text-center text-4xl font-bold pt-10 ">Our Products</h1>
             <div id="categories" class="categories-section flex flex-wrap py-5 justify-center gap-5">
-                <button class="btn btn-sm rounded-3xl px-5  bg-blue-500 text-white">All</button>
+                <button onclick="loadAllCategories()"
+                class="btn btn-sm rounded-3xl px-5  bg-blue-500 text-white">
+                    All</button>
             </div>
         </section>
         <section id="categories-container" class="w-11/12 mx-auto grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">

@@ -56,14 +56,34 @@ const displayAllCategories = (cards) => {
 function displayCategory(categories) {
 
   const AllCategory = document.getElementById("categories")
-  for (let category of categories) {
+  for (let categori of categories) {
+    // console.log(category);
+    
     const categoryDiv = document.createElement('div')
     categoryDiv.innerHTML = `
-      <button class="btn btn-sm rounded-3xl px-5 hover:bg-blue-500 hover:text-white">${category}</button>
+      <button onclick="loadCategoryByName(${categori.category})"
+      class="btn btn-sm rounded-3xl px-5 hover:bg-blue-500 hover:text-white">${categori}</button>
       `;
     AllCategory.append(categoryDiv);
 
   }
+
+}
+
+// load category by name 
+
+const loadCategoryByName =(id)=>{
+  const categoryUrl = 
+  `https://fakestoreapi.com/products/category/${id}`;
+  // console.log(categoryUrl)
+  fetch(categoryUrl)
+  .then(res=> res.json())
+  .then(data => displayCategory(data.category))
+
+  
+
+
+  
 
 }
 
